@@ -1,0 +1,14 @@
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		title Modal window
+		link(href="style.css", rel="stylesheet")
+	body
+		input#idCheckbox(type='checkbox')
+		label(for='idCheckbox') Click Too Open Modal window
+		label#FonModal(for='idCheckbox')
+		#Modal This Modal window
+			label#Close(for='idCheckbox') X
+			input(type='text' placeholder="Name")
+			input(type='text' placeholder="Namber & Email")
+			input(type='button' value="OK")

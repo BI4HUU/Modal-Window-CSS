@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+#FonModal {
+  z-index: 99999;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); }
+
+#Modal {
+  z-index: 99999;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 30%;
+  min-height: 300px;
+  min-width: 400px;
+  transform: translate(-50%, -50%);
+  background: rgba(200, 200, 200, 0.6);
+  flex-direction: column;
+  padding: 4%;
+  justify-content: space-around;
+  align-items: center;
+  font: 2em GOST Type BU; }
+
+#Close {
+  position: absolute;
+  padding: 4%;
+  top: 0;
+  right: 0;
+  background: rgba(255, 0, 0, 0.3); }
+  #Close:hover {
+    background: rgba(255, 0, 0, 0.8); }
+
+#Modal input {
+  padding: 4%;
+  width: 80%;
+  font: 1em GOST Type BU; }
+
+#FonModal {
+  z-index: 99999;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); }
+
+#idCheckbox:checked ~ #Modal {
+  display: flex; }
+
+#idCheckbox:checked ~ #FonModal {
+  display: block; }
+
+#idCheckbox {
+  display: none; }
